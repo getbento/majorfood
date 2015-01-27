@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load account_staticfiles %}
+
+{% block body_class %}home{% endblock %}
+{% block html_class_ie8 %}homepage{% endblock %}
+{% block html_class_gtie8 %}homepage{% endblock %}
+
+{% block content %}
+<div id="video-container">
+  <video autoplay preload="auto">
+    <source src="http://player.vimeo.com/external/103819875.hd.mp4?s=09c12130c0003b6f55b5b5744c9d58c0" type="video/mp4">
+    <source src="{% account_static 'video/splash.webm' %}" type="video/webm">
+  </video>
+</div>
+<div id="main-home">
+<div id="finalsection">
+<div id="feature-container">
+  <div id="feature-container-inner">
+    {% for location in locations %}<a target="_blank" href="{{location.short_name}}" class="plate standard">
+      <img src="{{ location.map_image_url }}" alt="{{ location.name }}">
+    </a>{% endfor %}
+    {% for location in locations %}
+    <a target="_blank" href="{{location.short_name}}" class="plate mobile"><img alt="{{location.name}}" src="{% with loopcount=forloop.counter0 %}{% for gallery in galleries %}{% if gallery.name == 'Mobile Logos' %}{% for image in gallery.images.all %}{% if forloop.counter0 == loopcount %}{{ image.image_url }}{% endif %}{% endfor %}{% endif %}{% endfor %}{% endwith %}"></a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+
+{% block footer %}
+<footer class="hide-for-small-only">
+  <ul id="left-list">
+    {% for location in locations %}
+      <li><a target="_blank" href="{{location.short_name}}">{{location.name}}</a></li>
+    {% endfor %}
+  </ul>
+  <ul id="right-list">
+    {% for nav in main_nav_items %}
+      <li><a href="{% if nav.target %}{{ nav.target }}{% else %}{{ nav.get_absolute_url }}{% endif %}">{{ nav.name }}</a></li>
+    {% endfor %}
+      <li><a href="{{ press.first.file_url }}" target="_blank">Press Kit</a></li>
+  </ul>
+  <img id="logo" alt="Major Food Group" src="{% account_static 'img/home_logo.png' %}">
+</footer>
+{% endblock %}
+</div>
+</div>

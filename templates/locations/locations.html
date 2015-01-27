@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load account_staticfiles %}
+{% load static %}
+{% load extra_tags %}
+{% block body_class %}locations{% endblock %}
+
+{% block title %}Restaurants - Major Food Group{% endblock %}
+
+{% block content %}
+<div class="container" id="location-list">
+	{% for location in objects %}
+		<div class="row location">
+			<div class="medium-6 columns">
+				<img src="{{ location.map_image_url }}" alt="{{ location.name }}" class="plate">
+			</div>
+			<div class="medium-6 columns">
+				<div class="row">
+					<div class="medium-12 columns">
+						<h2 class="address">{{location.address | break_on_period | safe }}{%if location.phone_number%}<br>{{location.phone_number}}{% endif%}</h2>
+						<a class="btn" href="{{location.short_name}}" target="_blank">Visit Web Site</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-12 columns">
+						<div class="cycle-slideshow"
+							data-cycle-fx="scrollHorz"
+							data-cycle-timeout="0"
+							data-cycle-prev="#prev{{forloop.counter}}"
+							data-cycle-next="#next{{forloop.counter}}"
+							data-cycle-slides="> p"
+    						data-cycle-auto-height=container
+							data-allow-wrap=false>
+							{{location.display_hours | safe}}
+						</div>
+						<div class="controls">
+    						<a href="#" id="prev{{forloop.counter}}" class="prev"><img src="{% account_static 'img/prev_arrow.png' %}" alt="Previous"></a> 
+    						<a href="#" id="next{{forloop.counter}}" class="next"><img src="{% account_static 'img/next_arrow.png' %}" alt="Next"></a>
+    					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+{% endblock %}

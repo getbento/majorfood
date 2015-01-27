@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load account_staticfiles %}
+{% block body_class %}about{% endblock %}
+
+{% block title %}About - Major Food Group{% endblock %}
+
+{% block content %}
+<div id="splash">
+	<div id="splash-bg" style="background-image:url('{{ callouts.0.image_url }}')"></div>
+	<div id="splash-content">
+		<h2>{{ callouts.0.title }}</h2>
+		<a href="#" id="downarrow"><img src="{% account_static 'img/down_arrow.png' %}" alt="Go down"></a>
+	</div>
+</div>
+<div class="container" id="about-content">
+	<div class="row">
+		<div class="large-5 columns large-offset-1">
+			{{ callouts.1.text | safe }}
+		</div>
+		<div class="large-5 columns end">
+			{{ callouts.2.text | safe }}
+		</div>
+	</div>
+</div>
+{% endblock %}

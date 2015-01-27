@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load account_staticfiles %}
+{% load static %}
+{% load custom_tags %}
+{% block body_class %}team{% endblock %}
+
+{% block title %}Team - Major Food Group{% endblock %}
+
+{% block content %}
+<div class="container" id="staff-list">
+		<div class="row staff">
+			<div class="large-8 columns large-offset-2">
+				<div class="row">
+					{% for staff in objects %}
+					<div class="medium-4 columns {% if forloop.last %}end{% endif %}">
+						<a href="#" id="next{{forloop.counter}}" class="next" data-member="{{forloop.counter}}">
+						<h2>{{ staff.name | split:' ' | join:'<br>' }}</h2>
+						<span class="title">{{ staff.title }}</span>
+						<img src="{{ staff.image_url }}" alt="{{ staff.name }}" class="">
+						</a>
+					</div>
+					{% endfor %}
+    			</div>
+			</div>
+		</div>
+</div>
+{% for staff in objects %}
+<div class="overlay" id="member-{{forloop.counter}}" style="display:none;">
+	<a class="close" href="#"><img src="{% account_static 'img/x-button.png'%}" alt="Close"></a>
+	<div class="container">
+		<div class="row">
+			<div class="large-8 columns large-offset-2">
+				<h2>{{ staff.name }}</h2>
+				<span class="title">{{ staff.title }}</span>
+				{{staff.bio | safe}}
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+{% endblock %}
