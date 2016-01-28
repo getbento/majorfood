@@ -27,7 +27,7 @@ $(document).ready(function() {
     //    }
 
         if($("footer").is(":visible")){
-    
+
             $( "#feature-container" ).mousemove(function(e) {
                 var mousePercent = e.pageX/$(window).width();
                 $( "#feature-container-inner" ).css("transform","translateX("+(featureWidth-$(window).width())*mousePercent*-1+"px)");
@@ -60,12 +60,12 @@ $(document).ready(function() {
         $("form input.submit").click(function() {
             var error_raised = false;
             $("form input").css( "border", "2px solid #000;" );
-            
+
             if ($("input#email").val() == "") {
               $("input#email").css( "border", "2px solid red" );
               error_raised = true;
             }
-  
+
             if(error_raised == true) {
               return false;
             }
@@ -75,9 +75,11 @@ $(document).ready(function() {
             if($("form select#reason").val() == "Employment"){
                 $("form label.message").text('Cover Letter');
                 $("#resume_container").slideDown();
+                $('#recipient').val('jonathan');
             }else{
                 $("form label.message").text('Message');
                 $("#resume_container").slideUp();
+                $('#recipient').val('daisy');
             }
         });
 
@@ -100,7 +102,7 @@ $(document).ready(function() {
             $('.overlay').fadeOut(function(){$('html, body').css('overflow','visible');});
         });
     }
-  
+
 
 });
 
