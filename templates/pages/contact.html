@@ -20,7 +20,7 @@
     		<form action="{% url 'form_to_email' %}" enctype="multipart/form-data" method="post">
         		{% render_honeypot_field %}
         		{% csrf_token %}
-        		<input id="recipient" type="hidden" name="recipient" value="daisy">
+        		<input id="recipient" type="hidden" name="recipient" value="maya">
         		<label>Name</label>
         		<input type="text" id="name" name="Name" placeholder=""></input>
         		<label>Email</label>
