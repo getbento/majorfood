@@ -13,9 +13,9 @@
   <meta name="Revisit-After" content="5 Days">
   <meta name="Distribution" content="Global">
   <meta name="Rating" content="General">
-  <meta name="Copyright" content="© Major Foods 2014">	  
+  <meta name="Copyright" content="© Major Foods 2014">
   <meta property="og:type" content="restaurant.restaurant" />
-  <link rel="icon" href="{{ account.favicon_url }}" /> 
+  <link rel="icon" href="{{ account.favicon_url }}" />
 
   <title>{% block title %}Major Food Group{% endblock %}</title>
 
@@ -46,7 +46,6 @@
     <a id="toggle-menu-header"><img alt="Open Menu" src="{% account_static 'img/menu_button.png' %}" id="box-menu"></a>
     <div id="header-popup-menu">
           <ul id="header-list">
-                <li><a href="/#skip">Home</a></li>
               {% for nav in main_nav_items %}
                 <li><a href="{% if nav.target %}{{ nav.target }}{% else %}{{ nav.get_absolute_url }}{% endif %}">{{ nav.name }}</a></li>
               {% endfor %}
@@ -72,7 +71,6 @@
   </footer>
   <div id="footer-popup-menu">
     <ul>
-      <li><a href="/#skip">Home</a></li>
       {% for nav in main_nav_items %}
         <li><a href="{% if nav.target %}{{ nav.target }}{% else %}{{ nav.get_absolute_url }}{% endif %}">{{ nav.name }}</a></li>
       {% endfor %}
