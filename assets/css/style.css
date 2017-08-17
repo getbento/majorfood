@@ -253,7 +253,7 @@ body.home { position: absolute;background: #f7f4f0 url('../img/home_bg.jpg') no-
 		display:block;
 		position:absolute;
 		bottom:0;left:0;right:0;
-		height:220px;
+		height:230px;
 		width:100%;
 		overflow:hidden;
 		background:#080808;
@@ -267,7 +267,7 @@ body.home { position: absolute;background: #f7f4f0 url('../img/home_bg.jpg') no-
 		display:block;
 		list-style: none;
 		padding:0;
-		margin:40px 34px;
+		margin:30px 34px;
 	}
 	body.home footer ul#left-list {
 		float:left;
