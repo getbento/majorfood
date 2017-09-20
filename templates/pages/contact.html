@@ -21,11 +21,11 @@
         		{% render_honeypot_field %}
         		{% csrf_token %}
         		<input id="recipient" type="hidden" name="recipient" value="maya">
-        		<label>Name</label>
+        		<label for='name'>Name</label>
         		<input type="text" id="name" name="Name" placeholder=""></input>
-        		<label>Email</label>
+        		<label for='email'>Email</label>
         		<input type="text" id="email" name="Email" placeholder=""></input>
-                <label>Reason for inquiry</label>
+                <label for='reason'>Reason for inquiry</label>
                 <div class="styled-select">
                     <select name="Reason" id="reason">
                         <option value="General" SELECTED>General</option>
@@ -33,7 +33,7 @@
                         <option value="Employment">Employment</option>
                     </select>
                 </div>
-        		<label class="message">Message</label>
+        		<label for='message' class="message">Message</label>
         		<textarea rows="5" type="text" id="message" name="Message" placeholder=""></textarea>
                 <div id="resume_container" class="hide">
                     <label>Resume</label>
