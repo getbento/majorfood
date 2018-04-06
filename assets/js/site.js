@@ -79,7 +79,7 @@ $(document).ready(function() {
             }else{
                 $("form label.message").text('Message');
                 $("#resume_container").slideUp();
-                $('#recipient').val('maya');
+                $('#recipient').val('reservations');
             }
         });
 
