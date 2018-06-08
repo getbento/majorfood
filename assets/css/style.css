@@ -1,23 +1,24 @@
 @font-face {
-	font-family: 'Knockout-HTF50-Welterweight';
-	src: url('../fonts/KnockHTF50Wel.eot');
+	font-family: "Knockout-HTF50-Welterweight";
+	src: url("../fonts/KnockHTF50Wel.eot");
 }
 
 @font-face {
-	font-family: 'Knockout-HTF50-Welterweight';
-	src: url('../fonts/KnockHTF50Wel.woff') format('woff'),
-		url('../fonts/KnockHTF50Wel.svg#Knockout-HTF50-Welterweight') format('svg');
+	font-family: "Knockout-HTF50-Welterweight";
+	src: url("../fonts/KnockHTF50Wel.woff") format("woff"),
+		url("../fonts/KnockHTF50Wel.svg#Knockout-HTF50-Welterweight")
+			format("svg");
 }
 @font-face {
-	font-family: 'Knockout-HTF30-JuniorWelterwt';
-	src: url('../fonts/KnockHTF30JunWel.eot');
+	font-family: "Knockout-HTF30-JuniorWelterwt";
+	src: url("../fonts/KnockHTF30JunWel.eot");
 }
 
 @font-face {
-	font-family: 'Knockout-HTF30-JuniorWelterwt';
-	src: url('../fonts/KnockHTF30JunWel.woff') format('woff'),
-		url('../fonts/KnockHTF30JunWel.svg#Knockout-HTF30-JuniorWelterwt')
-			format('svg');
+	font-family: "Knockout-HTF30-JuniorWelterwt";
+	src: url("../fonts/KnockHTF30JunWel.woff") format("woff"),
+		url("../fonts/KnockHTF30JunWel.svg#Knockout-HTF30-JuniorWelterwt")
+			format("svg");
 }
 
 *,
@@ -48,13 +49,13 @@ body {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: #f7f4f0 url('../img/bg.jpg') no-repeat center center;
+	background: #f7f4f0 url("../img/bg.jpg") no-repeat center center;
 	background-size: cover;
 }
 
 @media (min-width: 641px) {
 	html {
-		background: #f7f4f0 url('../img/bg.jpg') no-repeat center top;
+		background: #f7f4f0 url("../img/bg.jpg") no-repeat center top;
 		background-attachment: fixed;
 		background-size: cover;
 	}
@@ -141,7 +142,7 @@ footer .footer-right a#logo {
 	padding: 0 15px;
 	font-size: 15px;
 	line-height: 30px;
-	font-family: 'Knockout-HTF30-JuniorWelterwt';
+	font-family: "Knockout-HTF30-JuniorWelterwt";
 	font-weight: bold;
 	transition: color 0.4s, border-color 0.4s;
 }
@@ -205,7 +206,7 @@ header a#toggle-menu-header {
 	padding: 0 15px;
 	font-size: 18px;
 	line-height: 39px;
-	font-family: 'Knockout-HTF30-JuniorWelterwt';
+	font-family: "Knockout-HTF30-JuniorWelterwt";
 	font-weight: bold;
 	transition: color 0.4s, border-color 0.4s;
 }
@@ -236,7 +237,7 @@ header a#toggle-menu-header {
 }
 body.home {
 	position: absolute;
-	background: #f7f4f0 url('../img/home_bg.jpg') no-repeat center top;
+	background: #f7f4f0 url("../img/home_bg.jpg") no-repeat center top;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -260,7 +261,7 @@ body.home {
 		left: 0;
 		right: 0;
 		width: 100%;
-		background: #f7f4f0 url('../img/home_bg.jpg') no-repeat center top;
+		background: #f7f4f0 url("../img/home_bg.jpg") no-repeat center top;
 		background-size: cover;
 		white-space: nowrap;
 		overflow: hidden;
@@ -297,7 +298,7 @@ body.home {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		height: 230px;
+		height: 280px;
 		width: 100%;
 		overflow: hidden;
 		background: #080808;
@@ -343,7 +344,7 @@ body.home {
 		text-transform: uppercase;
 		padding: 0 15px;
 		font-size: 15px;
-		font-family: 'Knockout-HTF30-JuniorWelterwt';
+		font-family: "Knockout-HTF30-JuniorWelterwt";
 		font-weight: normal;
 		transition: color 0.4s, border-color 0.4s;
 	}
@@ -363,7 +364,7 @@ body.home {
 	margin: -30px auto 0;
 }
 #location-list h2.address {
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	font-size: 24px;
 	line-height: 26px;
 	text-transform: uppercase;
@@ -376,7 +377,7 @@ body.home {
 	right: 30px;
 	bottom: 4px;
 	text-transform: uppercase;
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 20px;
@@ -403,7 +404,7 @@ body.home {
 #location-list p span {
 	font-size: 18px !important;
 	line-height: 32px !important;
-	font-family: 'Vollkorn', serif !important;
+	font-family: "Vollkorn", serif !important;
 	text-transform: none !important;
 }
 .controls {
@@ -437,7 +438,7 @@ body.home {
 	font-size: 16px !important;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	color: #2b2b2b;
 	font-weight: normal;
 	letter-spacing: 1px;
@@ -472,7 +473,7 @@ body.home {
 	text-decoration: none;
 }
 #staff-list h2 {
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	color: #2b2b2b;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -502,7 +503,7 @@ body.home {
 #staff-list .bio-preview span {
 	font-size: 18px !important;
 	line-height: 32px !important;
-	font-family: 'Vollkorn', serif !important;
+	font-family: "Vollkorn", serif !important;
 	text-transform: none !important;
 }
 
@@ -529,7 +530,7 @@ body.home {
 	padding-top: 10%;
 }
 #splash h2 {
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	font-size: 41px;
 	line-height: 53px;
 	color: #080808;
@@ -556,7 +557,7 @@ body.home {
 #about-content p span {
 	font-size: 18px !important;
 	line-height: 32px !important;
-	font-family: 'Vollkorn', serif !important;
+	font-family: "Vollkorn", serif !important;
 	text-transform: none !important;
 }
 @media only screen and (max-width: 640px) {
@@ -584,7 +585,7 @@ body.home {
 	line-height: 36px;
 }
 #contact-content h2 {
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	color: #2b2b2b;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -592,7 +593,7 @@ body.home {
 	margin: 0 0 38px;
 }
 #contact-content h3 {
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 24px;
@@ -620,7 +621,7 @@ form input {
 	margin-bottom: 36px;
 	border: 2px solid #000;
 	font-size: 18px;
-	font-family: 'Vollkorn', serif;
+	font-family: "Vollkorn", serif;
 	padding: 10px 12px;
 }
 form textarea {
@@ -629,13 +630,13 @@ form textarea {
 	margin-bottom: 24px;
 	border: 2px solid #000;
 	font-size: 18px;
-	font-family: 'Vollkorn', serif;
+	font-family: "Vollkorn", serif;
 	padding: 10px 12px;
 	resize: none;
 }
 form input#submit {
 	text-transform: uppercase;
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 40px;
@@ -659,14 +660,14 @@ form .styled-select {
 	margin-bottom: 36px;
 	border: 2px solid #000;
 	font-size: 18px;
-	font-family: 'Vollkorn', serif;
+	font-family: "Vollkorn", serif;
 	background: #fff url(../img/dropdown_arrow.png) no-repeat right;
 	padding: 6px 12px;
 }
 form .styled-select select {
 	background: transparent;
 	width: 100%;
-	font-family: 'Vollkorn', serif;
+	font-family: "Vollkorn", serif;
 	padding: 5px;
 	font-size: 18px;
 	border: 0;
@@ -680,7 +681,7 @@ form .styled-select select {
 }
 
 #anti-discrimination-content h2 {
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	font-size: 41px;
 	line-height: 53px;
 	color: #080808;
@@ -770,7 +771,7 @@ form .styled-select select {
 	z-index: 2;
 }
 .overlay h2 {
-	font-family: 'Knockout-HTF50-Welterweight';
+	font-family: "Knockout-HTF50-Welterweight";
 	color: #ffffff;
 	font-weight: normal;
 	text-transform: uppercase;

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load honeypot %}
+{% load extra_tags %}
+{% block body_class %}contact{% endblock %}
+
+{% block title %}{{ callouts_by_slug.privacypolicy.title }} - Major Food Group{% endblock %}
+
+{% block content %}
+<div class="container" id="contact-content">
+	<div class="row">
+		<div class="large-8 large-offset-2 columns">
+			<h2>{{callouts_by_slug.privacypolicy.title }}</h2>
+			<hr>
+			{{ callouts_by_slug.privacypolicy.text|safe }}
+		</div>
+	</div>
+</div>
+{% endblock %}
